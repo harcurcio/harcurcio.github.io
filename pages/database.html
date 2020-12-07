@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+    <meta charset='utf-8'>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Database</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/styles.css">
+    <script src="https://kit.fontawesome.com/16eef0316e.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="logo">
+            <a class="active" href="index.html">
+                <h1>How2Start</h1>
+            </a>
+        </div>
+        <a href="website.html"><i class="fas fa-laptop-code"></i> Website</a>
+        <div class="dropdown">
+            <button class="dropbtn"><i class="fas fa-mobile-alt"></i> Mobile App
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="iosApp.html">iOS App</a>
+                <a href="androidApp.html">Android App</a>
+            </div>
+        </div>
+        <a href="unity.html"><i class="fas fa-gamepad"></i> Video Game</a>
+        <a href="database.html"><i class="fas fa-database"></i> Database</a>
+    </div>
+
+    <div class="row">
+        <div class="col-9 main">
+            <h1>Database</h1>
+            <p>SQL is the standard language when it comes to creating a database.
+                You'll have to download <a
+                    href="https://www.microsoft.com/en-us/sql-server/sql-server-downloads">SQL</a> and the <a
+                    href="https://docs.microsoft.com/en-us/sql/ssms/download-sql-server-management-studio-ssms?view=sql-server-ver15">SQL
+                    Server Management Studio</a> (SSMS). SSMS is the software used to manage any SQL infrastructure.</p>
+            <h2>SQL Server Management Studio</h2>
+            <p>Launch the SSMS. Locate the Databases folder on the left-hand side of the screen under Object Explorer.
+                Click on the New Database option, name it, and press Ok.</p>
+            <p>To create a database object, click on the plus sign to the left of your database's name. Click the plus
+                again on the Tables folder.</p>
+            <p>There are two options to create you tables:</p>
+            <ol>
+                <li>Create tables using the built-in GUI by right clicking on Tables then clicking on New Table. The GUI
+                    allows a column name, data type, and if it does or does not allow nulls.<br>
+                    GUI tables are not repeatable like a SQL script is, so it is recommended to use a script if you are
+                    dealing with a medium-large amount of data.</li>
+                <li>Write a SQL script that contains tables that will be 'executed' and populated in the Tables folder.
+                </li>
+            </ol>
+            <h3>Writing a SQL Script</h3>
+            <p>Create a SQL script and write 'CREATE TABLE' in the first line of your code. Don't forget to capitalize
+                it! This phrase is called the data definition language, it's how you let the system know you're creating
+                a table.</p>
+            <p>Once you've created your tables, hit the Execute button and your tables will appear in the Tables folder.
+            </p>
+            <p>Create another SQL script to load data with insert statements for each of your tables. Executing that
+                script will load the data into your already created tables.</p>
+            <h3>Queries</h3>
+            <p>After writing the table and load data scripts, you have to write a query to make use of and retrieve your
+                data.</p>
+            <p>A query pulls the data from your tables. For example, if we used a query that said "SHOW TABLES in
+                NewEngland;", we would find that we have tables
+                for each state in New England: people_connecticut, people_maine, people_massachusetts,
+                people_newhampshire, people_rhodeisland, and people_vermont.
+            </p>
+            <p>THe following are some of the most important and common commands in SQL for all of your scripts:</p>
+            <ul>
+                <li>SELECT - extracts data from a database</li>
+                <li>UPDATE - updates data in a database</li>
+                <li>DELETE - deletes data from a database</li>
+                <li>INSERT INTO - inserts new data into a database</li>
+                <li>CREATE DATABASE - creates a new database</li>
+                <li>ALTER DATABASE - modifies a database</li>
+                <li>CREATE TABLE - creates a new table</li>
+                <li>ALTER TABLE - modifies a table</li>
+                <li>DROP TABLE - deletes a table</li>
+                <li>CREATE INDEX - creates an index (search key)</li>
+                <li>DROP INDEX - deletes an index</li>
+            </ul>
+            <p>Once you're done with your query, execute that file and the results will appear in the bottom-most
+                window. And with that, you've created a simple database! Good on you.</p>
+        </div>
+        <div class="col-3 main">
+            <h1>References</h1>
+            <p><a href="https://www.sql-easy.com">SQL-Easy Tutorial</a></p>
+            <p><a href="https://www.khanacademy.org/computing/computer-programming/sql/sql-basics/v/welcome-to-sql">SQL Khan Academy Course</a></p>
+            <p><a href="https://blog.hubspot.com/marketing/sql-tutorial-introduction">Writing Queries Tutorial</a></p>
+            <p><a href="https://www.w3schools.com/sql/sql_ref_sqlserver.asp">List of SQL Functions</a></p>
+            <p><a href="https://www.youtube.com/watch?v=27axs9dO7AE&ab_channel=DanielleTh%C3%A9">'What is SQL? [in 4 minutes for beginners],' Youtube video</a></p>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
