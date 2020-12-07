@@ -12,38 +12,46 @@
 </head>
 
 <body>
-    <div class="navbar">
-        <div class="logo">
-            <a class="active" href="index.html">
-                <h1>How2Start</h1>
-            </a>
+    <nav class="navbar navbar-expand-lg" style="background-color: #4caf50;">
+        <a class="navbar-brand" href="../index.html">How2Start</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="website.html"><i class="fas fa-laptop-code"></i> Website</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="unity.html"><i class="fas fa-gamepad"></i> Video Game</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fas fa-mobile-alt"></i>
+                Mobile App
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <a class="dropdown-item" href="iosApp.html">iOS App</a>
+                <a class="dropdown-item" href="androidApp.html">Android App</a>
+              </div>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="database.html"><i class="fas fa-database"></i> Database</a>
+              </li>
+          </ul>
         </div>
-        <a href="website.html"><i class="fas fa-laptop-code"></i> Website</a>
-        <div class="dropdown">
-            <button class="dropbtn"><i class="fas fa-mobile-alt"></i> Mobile App
-                <i class="fa fa-caret-down"></i>
-            </button>
-            <div class="dropdown-content">
-                <a href="iosApp.html">iOS App</a>
-                <a href="androidApp.html">Android App</a>
-            </div>
-        </div>
-        <a href="unity.html"><i class="fas fa-gamepad"></i> Video Game</a>
-        <a href="database.html"><i class="fas fa-database"></i> Database</a>
-    </div>
+    </nav>
 
     <div class="row">
-        <div class="col-9 main">
+        <div class="col-1"></div>
+        <div class="col-8 main">
             <h1>Developing a Game with Unity</h1>
-            <p>Unity is the world's most popular game development engine. It runs on the C# language and is decently
+            <p>Unity is the world's most popular game development engine. It runs on the <strong>C#</strong> language and is decently
                 beginner-friendly with endless amounts of learning material available on its website.</p>
-            <p>You can download C# here and Unity <a href="https://unity3d.com/get-unity/download">here</a>. You can
+            <p>You can download Unity <a href="https://unity3d.com/get-unity/download">here</a>. You can
                 either download the Student or Personal version of Unity, both are free.</p>
             <h2>Unity</h2>
-            <p>Once you have unity up and running, click the new project button.</p>
-            <p>Name it under the project name section, and choose if it will be 2d or 3d under template.</p>
-            <p>Once you are in the project window, click on the layout dropdown at the top right of the interface.</p>
-            <p>Select the 2 by 3 option. This is the most commonly used layout option because you can see all the
+            <p>Once you have unity up and running, click the <strong>New Project</strong> button. Name it under the project name section, and choose if it will be 2D or 3D under template.</p>
+            <p>Once you are in the project window, click on the <strong>Layout</strong> dropdown at the top right of the interface. Select the 2 by 3 option. This is the most commonly used layout option because you can see all the
                 different windows at once, but feel free to play around and find a view that you like the most.</p>
             <h3>The Windows</h3>
             <ul>
@@ -64,26 +72,35 @@
                 <p>How the player will see your game.</p>
             </ul>
             <h3>Making and Manipulating your GameObject</h3>
-            <p>To create your first GameObject, to go GameObject > 3D Object > Cube in the toolbar at the top of the
+            <p>A GameObject is simply an object in your game. To create your first GameObject, to go <strong>GameObject > 3D Object > Cube</strong> in the toolbar at the top of the
                 page.</p>
-            <p>To add functionality, click on the Assets folder in the Project window. In the Assets folder, right click
-                and go to Create > C# Script.</p>
-            <p>This will load up your text editor, where you will write your C# code. Once you are done writing the
-                code, you can just save and exit out of the text editor window.</p>
+            <p>To add functionality, click on the <strong>Assets</strong> folder in the Project window. In the <strong>Assets</strong> folder, right click
+                and go to <strong>Create > C# Script</strong>. This will load up your text editor, where you will write your C# code. Once you are done writing the
+                code, you can just save and exit out of the text editor window. Creating the script will look like this:</p>
+            <p><img class="pic" src="../images/unity.png" alt="Screenshot of Unity window" height=400px width=700px></p>
             <p>Back in the main window, drag and drop your script onto the GameObject (in the hierarchy window) you
                 would like it to affect.</p>
             <h3>Running Your Game</h3>
-            <p>To run your game as a test, click on the Play button at the top-middle of the window. Soon, your game
+            <p>To run your game as a test, click on the <strong>Play </strong><img src="../images/run.png" alt="Play button" height=25px width=25px> button at the top-middle of the window. Soon, your game
                 will start in the Game View window, and you can play it with the controlls you initialized.</p>
+            <p>To deploy your game, click <strong>File > Build Settings...</strong>, choose your operating system in <strong>Target Platform</strong>. It should look like this: </p>
+            <p><img class="pic" src="../images/platform.png" alt="Different operating system options in Unity" height=200px width=420px></p>
+            <p>Click <strong>Build and Run</strong>.</p>
         </div>
-        <div class="col-3 main">
+        <div class="col-2 main">
             <h1>References</h1>
             <p><a href="https://learn.unity.com">Unity's Learn Website</a></p>
             <p><a href="https://learn.unity.com/pathway/unity-essentials">Unity Essentials Course</a></p>
             <p><a href="https://www.raywenderlich.com/unity/paths/learn">Unity for Beginners Blog</a></p>
-            <p><a href="https://www.youtube.com/channel/UCYbK_tjZ2OrIZFBvU6CCMiA">Brackeys: a channel on Youtube that has over 450 videos on game development</a></p>
+            <p><a href="https://unity3d.com/learning-c-sharp-in-unity-for-beginners">Coding in C# in Unity for beginners</a></p>
+            <p><a href="https://www.youtube.com/channel/UCYbK_tjZ2OrIZFBvU6CCMiA">Brackeys: a Youtube channel that has over 450 videos on game development</a></p>
         </div>
     </div>
+
+    <div class="footer col-12">
+        <p>Created by Harlie Curcio for Pitt's ENGCMP 1910</p>
+    </div>
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>

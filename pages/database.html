@@ -12,61 +12,72 @@
 </head>
 
 <body>
-    <div class="navbar">
-        <div class="logo">
-            <a class="active" href="index.html">
-                <h1>How2Start</h1>
-            </a>
+    <nav class="navbar navbar-expand-lg" style="background-color: #4caf50;">
+        <a class="navbar-brand" href="../index.html">How2Start</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="website.html"><i class="fas fa-laptop-code"></i> Website</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="unity.html"><i class="fas fa-gamepad"></i> Video Game</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fas fa-mobile-alt"></i>
+                Mobile App
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <a class="dropdown-item" href="iosApp.html">iOS App</a>
+                <a class="dropdown-item" href="androidApp.html">Android App</a>
+              </div>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="database.html"><i class="fas fa-database"></i> Database</a>
+              </li>
+          </ul>
         </div>
-        <a href="website.html"><i class="fas fa-laptop-code"></i> Website</a>
-        <div class="dropdown">
-            <button class="dropbtn"><i class="fas fa-mobile-alt"></i> Mobile App
-                <i class="fa fa-caret-down"></i>
-            </button>
-            <div class="dropdown-content">
-                <a href="iosApp.html">iOS App</a>
-                <a href="androidApp.html">Android App</a>
-            </div>
-        </div>
-        <a href="unity.html"><i class="fas fa-gamepad"></i> Video Game</a>
-        <a href="database.html"><i class="fas fa-database"></i> Database</a>
-    </div>
+    </nav>
 
     <div class="row">
-        <div class="col-9 main">
-            <h1>Database</h1>
-            <p>SQL is the standard language when it comes to creating a database.
+        <div class="col-1"></div>
+        <div class="col-8 main">
+            <h1>Developing a Database</h1>
+            <p><strong>SQL</strong> is the standard language when it comes to creating a database.
                 You'll have to download <a
                     href="https://www.microsoft.com/en-us/sql-server/sql-server-downloads">SQL</a> and the <a
                     href="https://docs.microsoft.com/en-us/sql/ssms/download-sql-server-management-studio-ssms?view=sql-server-ver15">SQL
-                    Server Management Studio</a> (SSMS). SSMS is the software used to manage any SQL infrastructure.</p>
+                    Server Management Studio</a> (SSMS). <strong>SSMS</strong> is the software used to manage any SQL infrastructure.</p>
             <h2>SQL Server Management Studio</h2>
-            <p>Launch the SSMS. Locate the Databases folder on the left-hand side of the screen under Object Explorer.
-                Click on the New Database option, name it, and press Ok.</p>
-            <p>To create a database object, click on the plus sign to the left of your database's name. Click the plus
-                again on the Tables folder.</p>
+            <p>Launch the SSMS. Locate the <strong>Databases</strong> folder on the left-hand side of the screen under Object Explorer.
+                Click on the <strong>New Database</strong> option, name it, and press <strong>Ok</strong>.</p>
+            <p>To create a database object, click on the plus sign to the left of your database's name under the Object Explorer. Click the plus
+                again on the <strong>Tables</strong> folder. Your Object Explorer should look like this:</p>
+            <p><img class="pic" src="../images/database.PNG" alt="Screenshot of SSMS window" height=350px width=820px></p>
             <p>There are two options to create you tables:</p>
             <ol>
-                <li>Create tables using the built-in GUI by right clicking on Tables then clicking on New Table. The GUI
+                <li>Create tables using the built-in GUI (Graphical User Interface) by right clicking <strong>Tables > New Table</strong>. The GUI
                     allows a column name, data type, and if it does or does not allow nulls.<br>
                     GUI tables are not repeatable like a SQL script is, so it is recommended to use a script if you are
                     dealing with a medium-large amount of data.</li>
-                <li>Write a SQL script that contains tables that will be 'executed' and populated in the Tables folder.
+                <li>Write a SQL script that contains tables that will be 'executed' and populated in the <strong>Tables</strong> folder.
                 </li>
             </ol>
             <h3>Writing a SQL Script</h3>
-            <p>Create a SQL script and write 'CREATE TABLE' in the first line of your code. Don't forget to capitalize
+            <p>Create a SQL script and write <code>CREATE TABLE</code> in the first line of your code. Don't forget to capitalize
                 it! This phrase is called the data definition language, it's how you let the system know you're creating
                 a table.</p>
-            <p>Once you've created your tables, hit the Execute button and your tables will appear in the Tables folder.
+            <p>Once you've created your tables, hit the <strong>Execute</strong> button and your tables will appear in the <strong>Tables</strong> folder.
             </p>
             <p>Create another SQL script to load data with insert statements for each of your tables. Executing that
                 script will load the data into your already created tables.</p>
             <h3>Queries</h3>
             <p>After writing the table and load data scripts, you have to write a query to make use of and retrieve your
                 data.</p>
-            <p>A query pulls the data from your tables. For example, if we used a query that said "SHOW TABLES in
-                NewEngland;", we would find that we have tables
+            <p>A query pulls the data from your tables. For example, if we used a query that said <code>SHOW TABLES in
+                NewEngland;</code>, we would find that we have tables
                 for each state in New England: people_connecticut, people_maine, people_massachusetts,
                 people_newhampshire, people_rhodeisland, and people_vermont.
             </p>
@@ -87,15 +98,21 @@
             <p>Once you're done with your query, execute that file and the results will appear in the bottom-most
                 window. And with that, you've created a simple database! Good on you.</p>
         </div>
-        <div class="col-3 main">
+        <div class="col-2 main">
             <h1>References</h1>
             <p><a href="https://www.sql-easy.com">SQL-Easy Tutorial</a></p>
+            <p><a href="https://www.youtube.com/watch?v=QY4bVNL_yrI&ab_channel=CBTNuggets">'How to Create Your First Database,' Youtube video</a></p>
             <p><a href="https://www.khanacademy.org/computing/computer-programming/sql/sql-basics/v/welcome-to-sql">SQL Khan Academy Course</a></p>
             <p><a href="https://blog.hubspot.com/marketing/sql-tutorial-introduction">Writing Queries Tutorial</a></p>
             <p><a href="https://www.w3schools.com/sql/sql_ref_sqlserver.asp">List of SQL Functions</a></p>
             <p><a href="https://www.youtube.com/watch?v=27axs9dO7AE&ab_channel=DanielleTh%C3%A9">'What is SQL? [in 4 minutes for beginners],' Youtube video</a></p>
         </div>
     </div>
+
+    <div class="footer col-12">
+        <p>Created by Harlie Curcio for Pitt's ENGCMP 1910</p>
+    </div>
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>

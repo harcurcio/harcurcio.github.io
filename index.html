@@ -10,24 +10,49 @@
     </head>
     
     <body>
-        <div class="navbar">
-            <div class="logo">
-                <a class="active" href="index.html"><h1>How2Start</h1></a>
+        <nav class="navbar navbar-expand-lg" style="background-color: #4caf50;">
+            <a class="navbar-brand" href="index.html">How2Start</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link" href="pages/website.html"><i class="fas fa-laptop-code"></i> Website</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="pages/unity.html"><i class="fas fa-gamepad"></i> Video Game</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fas fa-mobile-alt"></i>
+                    Mobile App
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <a class="dropdown-item" href="pages/iosApp.html">iOS App</a>
+                    <a class="dropdown-item" href="pages/androidApp.html">Android App</a>
+                  </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="pages/database.html"><i class="fas fa-database"></i> Database</a>
+                  </li>
+              </ul>
             </div>
-            <a href="pages/website.html"><i class="fas fa-laptop-code"></i> Website</a>
-            <div class="dropdown">
-                <button class="dropbtn"><i class="fas fa-mobile-alt"></i> Mobile App
-                    <i class="fa fa-caret-down"></i>
-                </button>
-                <div class="dropdown-content">
-                    <a href="pages/iosApp.html">iOS App</a>
-                    <a href="pages/androidApp.html">Android App</a>
-                </div>
+        </nav>
+        <div class="row">
+            <div class="col-2"></div>
+            <div class="col-8 main home">
+                <h1>Welcome to How2Start!</h1>
+                <p>This website is created for people who don't really know how to code, and the idea of blindly starting a project overwhelms them to no end. I've been there too, it's a horrible feeling with seemingly no end.</p>    
+                <p><i><strong>So,</strong></i> I took it upon myself to create a website that teaches you how to start some of the most common coding projects out there. 
+                  It's not the most detailed, but it's full of supplemental learning resources. Get out there and learn some code! Good luck!</p>
+                <br><p class="smiley">(•◡•)</p>
             </div>
-            <a href="pages/unity.html"><i class="fas fa-gamepad"></i> Video Game</a>
-            <a href="pages/database.html"><i class="fas fa-database"></i> Database</a>
+            <div class="col-2"></div>
         </div>
-        <h1></h1>
+        <div class="footer col-12 fixed-bottom">
+            <p>Created by Harlie Curcio for Pitt's ENGCMP 1910</p>
+        </div>
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     </body>
