@@ -14,93 +14,115 @@
 <body>
     <nav class="navbar navbar-expand-lg" style="background-color: #4caf50;">
         <a class="navbar-brand" href="../index.html">How2Start</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
+        <button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link" href="website.html"><i class="fas fa-laptop-code"></i> Website</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="unity.html"><i class="fas fa-gamepad"></i> Video Game</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fas fa-mobile-alt"></i>
-                Mobile App
-              </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                <a class="dropdown-item" href="iosApp.html">iOS App</a>
-                <a class="dropdown-item" href="androidApp.html">Android App</a>
-              </div>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="database.html"><i class="fas fa-database"></i> Database</a>
-              </li>
-          </ul>
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="website.html"><i class="fas fa-laptop-code"></i> Website</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="unity.html"><i class="fas fa-gamepad"></i> Video Game</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false"><i class="fas fa-mobile-alt"></i>
+                        Mobile App
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="iosApp.html">iOS App</a>
+                        <a class="dropdown-item" href="androidApp.html">Android App</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="database.html"><i class="fas fa-database"></i> Database</a>
+                </li>
+            </ul>
         </div>
     </nav>
 
-    <div class="row">
-        <div class="col-1"></div>
-        <div class="col-8 main">
-            <h1>Developing an iOS App</h1>
-            <p>iOS apps rely on the <strong>Swift</strong> programming language and a macOS of 10.11.5 or later.</p>
-            <p>You can download the Swift language <a
-                    href="https://swift.org/getting-started/#installing-swift">here</a>.
-                You will also need to download Xcode, Apple's development platform for iOS apps. You can download this
-                <a href="https://developer.apple.com/xcode/">here</a>.</p>
-            <h2>Xcode</h2>
-            <p>In the welcome window of Xcode, click <strong>Create a new Xcode project</strong>.</p>
-            <p>After creating a new project, select <strong>iOS</strong> at the top of the window. In the <strong>Application</strong> section, select
-                <strong>Single View Application</strong> and then click <strong>Next</strong>.</p>
-            <p><img class="pic" src="../images/application.PNG" alt="Screenshot of Xcode showing which options to choose"
-                    height=250px width=500px></p>
-            <p>In the next window, use the following to name your app and choose additional options:</p>
-            <ul>
-                <li>Product Name: AppName</li>
-                <li>Team: If this isn't automatically filled out, set it to None.</li>
-                <li>Organization Name: The name of your organization or your own name; you can leave this blank.</li>
-                <li>Organization Identifier: Your organization identifier, if you have one. If you don’t, use
-                    <code>com.example.</code></li>
-                <li>Bundle Identifier: This is a value that is automatically generated based on your product name and
-                    organization identifier.</li>
-                <li>Language: Swift</li>
-                <li>Devices: Universal; this means one app will run on both the iPhone and the iPad.</li>
-                <li>User Core Data: Unselected</li>
-                <li>Include Unit Tests: Selected</li>
-                <li>Include UI Tests: Unselected</li>
-            </ul>
-            <p>After you add those changes, click <strong>Next</strong>. Xcode will ask you to select a location to save your project,
-                then you can click <strong>Create</strong>. Your new project will open up in the Xcode workspace window.</p>
-            <h3>Running Your App</h3>
-            <p>In the Xcode toolbar at the very top of the page, click <strong>iPhone 7</strong>. Choose the simulator and not an iOS
-                device so you can run it without plugging a real device in.</p>
-            <p>Click the <strong>Run</strong> button <img src="../images/run.png" alt="Play button" height=25px width=25px> in the
-                top-left corner of the toolbar (it looks like a play button). Enable developer mode when prompted by
-                Xcode.</p>
-            <p>The app simulator will start automatically, opening in the iPhone mode you specified.
-                It will first show your app's launch screen, then it will transition to the app's main interface.
-                (Note: since we chose a Single View Application template, the launch screen and main interface are the
-                same thing.)
-            </p>
-            <p>You can quit the simulator by clicking <strong>Simulator > Quit Simulator</strong>, or by pressing <strong>Command-Q</strong>.</p>
-            <h3>Editing Your App</h3>
-            <p>To write the code in your app, navigate to your app folder in the navigation bar on the left-hand side of
-                the window - it will be named the same as your app. Open the folder, and click on the
-                <strong>ViewController.swift</strong> file.</p>
-            <p>To edit your UI, select the <strong>Main.storyboard</strong> file under your app's folder. This will open the <strong>Interface
-                Builder</strong>, Xcode's visual interface editor.
-                The background of the storyboard is the canvas, and you can use the canvas to add and arrange user
-                interface elements.
-            </p>
-            <p>Once you've made your changes, save and run the app the same as before. You now have a simple iOS app!</p>
-        </div>
-        <div class="col-2 main">
-            <h1>References</h1>
-            <p><a href="https://developer.apple.com/library/archive/referencelibrary/GettingStarted/DevelopiOSAppsSwift">Apple's official guide for creating your first app</a></p>
-            <p><a href="https://www.youtube.com/watch?v=09TeUXjzpKs&ab_channel=CodeWithChris">'iOS Tutorial (2020): How to Make Your First App,' Youtube video</a></p>
-            <p><a href="https://www.youtube.com/watch?v=hwkL_jNWCBw&ab_channel=TechLead">'Modern iPhone App Development,' Youtube video</a></p>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-1"></div>
+            <div class="col-8 main">
+                <h1>Developing an iOS App</h1>
+                <p>iOS apps rely on the <strong>Swift</strong> programming language and a macOS of 10.11.5 or later.</p>
+                <p>You can download the Swift language <a
+                        href="https://swift.org/getting-started/#installing-swift">here</a>.
+                    You will also need to download Xcode, Apple's development platform for iOS apps. You can download
+                    this
+                    <a href="https://developer.apple.com/xcode/">here</a>.</p>
+                <h2>Xcode</h2>
+                <p>In the welcome window of Xcode, click <strong>Create a new Xcode project</strong>.</p>
+                <p>After creating a new project, select <strong>iOS</strong> at the top of the window. In the
+                    <strong>Application</strong> section, select
+                    <strong>Single View Application</strong> and then click <strong>Next</strong>.</p>
+                <p><img class="pic" src="../images/application.PNG"
+                        alt="Screenshot of Xcode showing which options to choose" height=250px width=500px></p>
+                <p>In the next window, use the following to name your app and choose additional options:</p>
+                <ul>
+                    <li>Product Name: AppName</li>
+                    <li>Team: If this isn't automatically filled out, set it to None.</li>
+                    <li>Organization Name: The name of your organization or your own name; you can leave this blank.
+                    </li>
+                    <li>Organization Identifier: Your organization identifier, if you have one. If you don’t, use
+                        <code>com.example.</code></li>
+                    <li>Bundle Identifier: This is a value that is automatically generated based on your product name
+                        and
+                        organization identifier.</li>
+                    <li>Language: Swift</li>
+                    <li>Devices: Universal; this means one app will run on both the iPhone and the iPad.</li>
+                    <li>User Core Data: Unselected</li>
+                    <li>Include Unit Tests: Selected</li>
+                    <li>Include UI Tests: Unselected</li>
+                </ul>
+                <p>After you add those changes, click <strong>Next</strong>. Xcode will ask you to select a location to
+                    save your project,
+                    then you can click <strong>Create</strong>. Your new project will open up in the Xcode workspace
+                    window.</p>
+                <h3>Running Your App</h3>
+                <p>In the Xcode toolbar at the very top of the page, click <strong>iPhone 7</strong>. Choose the
+                    simulator and not an iOS
+                    device so you can run it without plugging a real device in.</p>
+                <p>Click the <strong>Run</strong> button <img src="../images/run.png" alt="Play button" height=25px
+                        width=25px> in the
+                    top-left corner of the toolbar (it looks like a play button). Enable developer mode when prompted by
+                    Xcode.</p>
+                <p>The app simulator will start automatically, opening in the iPhone mode you specified.
+                    It will first show your app's launch screen, then it will transition to the app's main interface.
+                    (Note: since we chose a Single View Application template, the launch screen and main interface are
+                    the
+                    same thing.)
+                </p>
+                <p>You can quit the simulator by clicking <strong>Simulator > Quit Simulator</strong>, or by pressing
+                    <strong>Command-Q</strong>.</p>
+                <h3>Editing Your App</h3>
+                <p>To write the code in your app, navigate to your app folder in the navigation bar on the left-hand
+                    side of
+                    the window - it will be named the same as your app. Open the folder, and click on the
+                    <strong>ViewController.swift</strong> file.</p>
+                <p>To edit your UI, select the <strong>Main.storyboard</strong> file under your app's folder. This will
+                    open the <strong>Interface
+                        Builder</strong>, Xcode's visual interface editor.
+                    The background of the storyboard is the canvas, and you can use the canvas to add and arrange user
+                    interface elements.
+                </p>
+                <p>Once you've made your changes, save and run the app the same as before. You now have a simple iOS
+                    app!</p>
+            </div>
+
+            <div class="col-3 main">
+                <h1>References</h1>
+                <p><a
+                        href="https://developer.apple.com/library/archive/referencelibrary/GettingStarted/DevelopiOSAppsSwift">Apple's
+                        official guide for creating your first app</a></p>
+                <p><a href="https://www.youtube.com/watch?v=09TeUXjzpKs&ab_channel=CodeWithChris">'iOS Tutorial (2020):
+                        How to Make Your First App,' Youtube video</a></p>
+                <p><a href="https://www.youtube.com/watch?v=hwkL_jNWCBw&ab_channel=TechLead">'Modern iPhone App
+                        Development,' Youtube video</a></p>
+            </div>
         </div>
     </div>
 

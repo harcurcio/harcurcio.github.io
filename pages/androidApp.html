@@ -14,85 +14,113 @@
 <body>
     <nav class="navbar navbar-expand-lg" style="background-color: #4caf50;">
         <a class="navbar-brand" href="../index.html">How2Start</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
+        <button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link" href="website.html"><i class="fas fa-laptop-code"></i> Website</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="unity.html"><i class="fas fa-gamepad"></i> Video Game</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fas fa-mobile-alt"></i>
-                Mobile App
-              </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                <a class="dropdown-item" href="iosApp.html">iOS App</a>
-                <a class="dropdown-item" href="androidApp.html">Android App</a>
-              </div>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="database.html"><i class="fas fa-database"></i> Database</a>
-              </li>
-          </ul>
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="website.html"><i class="fas fa-laptop-code"></i> Website</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="unity.html"><i class="fas fa-gamepad"></i> Video Game</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false"><i class="fas fa-mobile-alt"></i>
+                        Mobile App
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="iosApp.html">iOS App</a>
+                        <a class="dropdown-item" href="androidApp.html">Android App</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="database.html"><i class="fas fa-database"></i> Database</a>
+                </li>
+            </ul>
         </div>
     </nav>
 
-    <div class="row">
-        <div class="col-1"></div>
-        <div class="col-8 main">
-            <h1>Developing an Android App</h1>
-            <p>Android App development uses <strong>Android Studio</strong> as a development software and the <strong>Java</strong> or <strong>Kotlin</strong> language.
-                Java is used much more commonly and what we'll use here.</p>
-            <p>You'll need to have Java and Android Studio downloaded. You can download Java <a href="https://www.java.com/en/download/">here</a> and Android Studio
-                <a href="https://developer.android.com/studio">here</a>.</p>
-            <h2>Android Studio</h2>
-            <p>In the Welcome to Android Studio window, click <strong>Start</strong> a new Android Studio project. In the <strong>Select a Project Template</strong> window, select <strong>Empty Activity</strong> and click <strong>Next</strong>.</p>
-            <p>A window called <strong>Configure</strong> your project will pop up. In it, complete the following:</p>
-            <ul>
-                <li>Enter <code>My First App</code> in the <strong>Name</strong> field.</li>
-                <li>Enter <code>com.example.myfirstapp</code> in the <strong>Package</strong> name field.</li>
-                <li>If you'd like to place the project in a different folder, change its <strong>Save</strong> location.</li>
-                <li>Select Java from the <strong>Language</strong> drop-down menu.</li>
-                <li>Select the lowest version of Android your app will support in the <strong>Minimum SDK</strong> field.</li>
-                <li>If your app will require legacy library support, mark the <strong>Use legacy android.support libraries</strong>
-                    checkbox. We'll assume it won't for your first project, so leave this unchecked.</li>
-                <li>Leave the other options as they are.</li>
-            </ul>
-            <p>Once you click <strong>Finish</strong>, the Android Studio main window will appear.</p>
-            <p>Make sure the Project window is open by selecting <strong>View > Tool Windows > Project</strong> and the Android
-                view is selected from the drop-down list at the top of that window. You will see the following files:
-            </p>
-            <ul>
-                <li><strong>app > java > com.example.myfirstapp > MainActivity</strong></li>
-                <p>This is the main activity of your app. When you run your app, it will load the layout of this
-                    Activity.</p>
-                <li><strong>app > res > layout > activity_main.xml</strong></li>
-                <p>This file defines the layout for the user interface. Right now, it has a TextView element with the
-                    text <code>Hello, World!</code></p>
-                <li><strong>app > manifests > AndroidManifest.xml</strong></li>
-                <p>The manifest file describes the characteristics of the app and defines each of its components.</p>
-            </ul>
-            <h3>Running Your App</h3>
-            <p>It's easiest to run your app on an emulator Android Studio provides. Otherwise, you would need to connect
-                your Android device to your computer.</p>
-            <p>Create an Android Virtual Device (AVD) in the Android Studio that the emulator can use to install and run
-                your app. Select your app from the run/debug drop-down menu in the toolbar at the top of the window. In the toolbar, select the AVD that you would like to run your app on from the drop-down menu. It should
-                look like this:</p>
-            <p><img class="pic" src="../images/android.PNG" alt="Screenshot of Android Studio toolbar" height=330px width=700></p>
-            <p>Click <strong>Run</strong>. <img src="../images/run.png" alt="Play button" height=25px width=25px></p>
-            <p>Your app will install on the AVD and start the emulator. You'll see "Hello, World" displayed in the app.
-            Congrats, you've developed your first Andorid App! Be proud of yourself.</p>
-        </div>
-        <div class="col-2 main">
-            <h1>References</h1>
-            <p><a href="https://developer.android.com/training/basics/firstapp">Android's official guide to building your first app</a></p>
-            <p><a href="https://www.androidauthority.com/android-app-development-1128595">Android Authority's beginners guide to Android App development</a></p>
-            <p><a href="https://www.youtube.com/watch?v=fis26HvvDII&ab_channel=freeCodeCamp.org">'Android Development for Beginners,' Youtube video</a></p>
-            <p><a href="https://www.udacity.com/course/new-android-fundamentals--ud851">Developing Android Apps Udacity course</a></p>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-1"></div>
+            <div class="col-8 main">
+                <h1>Developing an Android App</h1>
+                <p>Android App development uses <strong>Android Studio</strong> as a development software and the
+                    <strong>Java</strong> or <strong>Kotlin</strong> language.
+                    Java is used much more commonly and what we'll use here.</p>
+                <p>You'll need to have Java and Android Studio downloaded. You can download Java <a
+                        href="https://www.java.com/en/download/">here</a> and Android Studio
+                    <a href="https://developer.android.com/studio">here</a>.</p>
+                <h2>Android Studio</h2>
+                <p>In the Welcome to Android Studio window, click <strong>Start</strong> a new Android Studio project.
+                    In the <strong>Select a Project Template</strong> window, select <strong>Empty Activity</strong> and
+                    click <strong>Next</strong>.</p>
+                <p>A window called <strong>Configure</strong> your project will pop up. In it, complete the following:
+                </p>
+                <ul>
+                    <li>Enter <code>My First App</code> in the <strong>Name</strong> field.</li>
+                    <li>Enter <code>com.example.myfirstapp</code> in the <strong>Package</strong> name field.</li>
+                    <li>If you'd like to place the project in a different folder, change its <strong>Save</strong>
+                        location.</li>
+                    <li>Select Java from the <strong>Language</strong> drop-down menu.</li>
+                    <li>Select the lowest version of Android your app will support in the <strong>Minimum SDK</strong>
+                        field.</li>
+                    <li>If your app will require legacy library support, mark the <strong>Use legacy android.support
+                            libraries</strong>
+                        checkbox. We'll assume it won't for your first project, so leave this unchecked.</li>
+                    <li>Leave the other options as they are.</li>
+                </ul>
+                <p>Once you click <strong>Finish</strong>, the Android Studio main window will appear.</p>
+                <p>Make sure the Project window is open by selecting <strong>View > Tool Windows > Project</strong> and
+                    the Android
+                    view is selected from the drop-down list at the top of that window. You will see the following
+                    files:
+                </p>
+                <ul>
+                    <li><strong>app > java > com.example.myfirstapp > MainActivity</strong></li>
+                    <p>This is the main activity of your app. When you run your app, it will load the layout of this
+                        Activity.</p>
+                    <li><strong>app > res > layout > activity_main.xml</strong></li>
+                    <p>This file defines the layout for the user interface. Right now, it has a TextView element with
+                        the
+                        text <code>Hello, World!</code></p>
+                    <li><strong>app > manifests > AndroidManifest.xml</strong></li>
+                    <p>The manifest file describes the characteristics of the app and defines each of its components.
+                    </p>
+                </ul>
+                <h3>Running Your App</h3>
+                <p>It's easiest to run your app on an emulator Android Studio provides. Otherwise, you would need to
+                    connect
+                    your Android device to your computer.</p>
+                <p>Create an Android Virtual Device (AVD) in the Android Studio that the emulator can use to install and
+                    run
+                    your app. Select your app from the run/debug drop-down menu in the toolbar at the top of the window.
+                    In the toolbar, select the AVD that you would like to run your app on from the drop-down menu. It
+                    should
+                    look like this:</p>
+                <p><img class="pic" src="../images/android.PNG" alt="Screenshot of Android Studio toolbar" height=330px
+                        width=700></p>
+                <p>Click <strong>Run</strong>. <img src="../images/run.png" alt="Play button" height=25px width=25px>
+                </p>
+                <p>Your app will install on the AVD and start the emulator. You'll see "Hello, World" displayed in the
+                    app.
+                    Congrats, you've developed your first Andorid App! Be proud of yourself.</p>
+            </div>
+
+            <div class="col-3 main">
+                <h1>References</h1>
+                <p><a href="https://developer.android.com/training/basics/firstapp">Android's official guide to building
+                        your first app</a></p>
+                <p><a href="https://www.androidauthority.com/android-app-development-1128595">Android Authority's
+                        beginners guide to Android App development</a></p>
+                <p><a href="https://www.youtube.com/watch?v=fis26HvvDII&ab_channel=freeCodeCamp.org">'Android
+                        Development for Beginners,' Youtube video</a></p>
+                <p><a href="https://www.udacity.com/course/new-android-fundamentals--ud851">Developing Android Apps
+                        Udacity course</a></p>
+            </div>
         </div>
     </div>
 
